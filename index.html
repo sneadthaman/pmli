@@ -7,33 +7,160 @@
     <title>Professional Maintenance of Long Island</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Color palette */
+        :root {
+            --white: #E7ECEF;
+            --red: #D62246;
+            --light-blue: #657ED4;
+            --black: #1F1300;
+        }
+
+        /* Page background and general text color */
+        body {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        /* Custom primary color (light blue) */
+        .is-primary {
+            background-color: var(--light-blue) !important;
+            border-color: var(--light-blue) !important;
+        }
+
+        /* Custom danger button (red) */
+        .is-danger {
+            background-color: var(--red) !important;
+            border-color: var(--red) !important;
+        }
+
+        /* Navbar and text styling */
+        .navbar-item img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        /* Hero section styling */
+        .hero-body {
+            padding: 4rem 1.5rem;
+        }
+
+        /* Section padding */
+        .section {
+            padding: 3rem 1.5rem;
+        }
+
+        .cta-buttons {
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Header Section with Logo -->
     <header class="hero is-primary">
         <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    Professional Maintenance of Long Island
-                </h1>
+            <div class="container has-text-centered">
                 <nav class="navbar">
-                    <div class="navbar-menu">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="index.html">
+                            <img src="assets/images/PMLI Transparent Logo.png" alt="PMLI Logo">
+                            <strong class="has-text-white">Professional Maintenance of Long Island</strong>
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+
+                    <div id="navbarMenu" class="navbar-menu">
                         <div class="navbar-start">
-                            <a class="navbar-item" href="index.html">Home</a>
-                            <a class="navbar-item" href="about.html">About Us</a>
-                            <a class="navbar-item" href="services.html">Services</a>
-                            <a class="navbar-item" href="contact.html">Contact Us</a>
+                            <a class="navbar-item has-text-white" href="index.html">Home</a>
+                            <a class="navbar-item has-text-white" href="about.html">About Us</a>
+                            <a class="navbar-item has-text-white" href="services.html">Services</a>
+                            <a class="navbar-item has-text-white" href="contact.html">Contact Us</a>
                         </div>
                     </div>
                 </nav>
+                <h1 class="title is-1 has-text-white">Expert Janitorial Services</h1>
+                <p class="subtitle is-4 has-text-white">
+                    Trusted by healthcare facilities for professional cleaning and maintenance.
+                </p>
+                <div class="cta-buttons">
+                    <a href="services.html" class="button is-light is-large">Our Services</a>
+                    <a href="contact.html" class="button is-primary is-large">Get a Quote</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- Service Section -->
     <section class="section">
         <div class="container">
+            <h2 class="title is-2 has-text-centered">Why Choose Us?</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3 class="title is-4">Professional Expertise</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus ligula vitae nulla ultricies, vel cursus sapien vehicula.
+                    </p>
+                </div>
+                <div class="column">
+                    <h3 class="title is-4">Certified for Healthcare</h3>
+                    <p>
+                        Ut condimentum enim a justo tincidunt, ac dignissim tortor vehicula. In hac habitasse platea dictumst. Proin vel leo ac ligula blandit.
+                    </p>
+                </div>
+                <div class="column">
+                    <h3 class="title is-4">24/7 Availability</h3>
+                    <p>
+                        Nulla facilisi. Sed vulputate orci in mi fringilla, sit amet dictum risus cursus. Vestibulum lacinia magna vel vestibulum cursus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered">What Our Clients Say</h2>
+            <div class="columns is-variable is-8">
+                <div class="column">
+                    <article class="box">
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                        </p>
+                        <p class="has-text-right">
+                            — Jane Doe, Healthcare Facility Manager
+                        </p>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="box">
+                        <p>
+                            "Ut condimentum enim a justo tincidunt, ac dignissim tortor vehicula. Phasellus rutrum sapien non imperdiet."
+                        </p>
+                        <p class="has-text-right">
+                            — John Smith, Hospital Administrator
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section has-background-light">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered">Get in Touch</h2>
             <!-- Contact Form -->
             <form action="https://formspree.io/f/xqazojwa" method="POST" class="box">
                 <div class="field">
@@ -69,4 +196,3 @@
 </body>
 
 </html>
-
