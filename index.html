@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Professional Maintenance of Long Island</title>
-   <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Maintenance of Long Island</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-   <header>
-      <h1>Professional Maintenance of Long Island</h1>
-      <nav>
-         <a href="index.html">Home</a>
-         <a href="about.html">About Us</a>
-         <a href="services.html">Services</a>
-         <a href="contact.html">Contact Us</a>
-      </nav>
-   </header>
-   
-   <!-- Main content goes here -->
-  <!-- modify this form HTML and place wherever you want your form -->
-<form
-action="https://formspree.io/f/xqazojwa"
-method="POST"
->
-<label>
-  Your email:
-  <input type="email" name="email">
-</label>
-<label>
-  Your message:
-  <textarea name="message"></textarea>
-</label>
-<!-- your other form fields go here -->
-<button type="submit">Send</button>
-</form>
- 
-   
-   <footer>
-      <p>&copy; 2024 Professional Maintenance of Long Island</p>
-   </footer>
+    <!-- Header Section -->
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Professional Maintenance of Long Island
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="index.html">Home</a>
+                            <a class="navbar-item" href="about.html">About Us</a>
+                            <a class="navbar-item" href="services.html">Services</a>
+                            <a class="navbar-item" href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/xqazojwa" method="POST" class="box">
+                <div class="field">
+                    <label class="label">Your email:</label>
+                    <div class="control">
+                        <input class="input" type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Your message:</label>
+                    <div class="control">
+                        <textarea class="textarea" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 Professional Maintenance of Long Island</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
+
